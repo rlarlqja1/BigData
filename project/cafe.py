@@ -49,12 +49,8 @@ with tab2:
     st.write(f'{select_year}년 월별 총매출')
     st.bar_chart(cafe_sales.set_index('month'))
 
-
 with tab3:
     # 총 매출
     total = cafe_data['price'].sum()
     st.title('총 매출')
     st.title(f'{total}원')
-
-
-
